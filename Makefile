@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: pedroribeiro <pedroribeiro@student.42.f>    +#+  +:+       +#+         #
+#    By: procha-r <procha-r@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2024/11/14 08:00:00 by pedroribeir       #+#    #+#              #
-#    Updated: 2024/11/14 08:00:00 by pedroribeir      ###   ########.fr        #
+#    Created: 2024/11/14 16:03:19 by procha-r          #+#    #+#              #
+#    Updated: 2024/11/17 17:00:39 by procha-r         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,6 +33,7 @@ SRC         = $(SRCDIR)/ft_printf.c \
               $(SRCDIR)/printing/print_char.c \
               $(SRCDIR)/printing/print_hex.c \
               $(SRCDIR)/printing/print_int.c \
+               $(SRCDIR)/printing/print_long_int.c \
               $(SRCDIR)/printing/print_percent.c \
               $(SRCDIR)/printing/print_pointer.c \
               $(SRCDIR)/printing/print_string.c \

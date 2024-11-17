@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   print_unsigned.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pedroribeiro <pedroribeiro@student.42.f    +#+  +:+       +#+        */
+/*   By: procha-r <procha-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 22:06:24 by pedroribeir       #+#    #+#             */
-/*   Updated: 2024/11/13 08:20:22 by pedroribeir      ###   ########.fr       */
+/*   Updated: 2024/11/17 14:02:26 by procha-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

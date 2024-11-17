@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pedroribeiro <pedroribeiro@student.42.f    +#+  +:+       +#+        */
+/*   By: procha-r <procha-r@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 21:02:13 by pedroribeir       #+#    #+#             */
-/*   Updated: 2024/11/14 09:03:04 by pedroribeir      ###   ########.fr       */
+/*   Updated: 2024/11/17 16:58:23 by procha-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,12 @@ static	int	handle_specifier(t_format fmt, va_list *args)
 	else if (fmt.specifier == 's')
 		length = print_string(va_arg(*args, char *), &fmt);
 	else if (fmt.specifier == 'd' || fmt.specifier == 'i')
-		length = print_int(va_arg(*args, int), &fmt);
+	{
+		if (fmt.length_modifier == 'l')
+			length = print_long_int(va_arg(*args, long), &fmt);
+		else
+			length = print_int(va_arg(*args, int), &fmt);
+	}
 	else if (fmt.specifier == 'x' || fmt.specifier == 'X')
 		length = print_hex(va_arg(*args, unsigned int), \
 		(fmt.specifier == 'X'), &fmt);
