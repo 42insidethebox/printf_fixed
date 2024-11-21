@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: procha-r <procha-r@student.42.fr>          +#+  +:+       +#+        */
+/*   By: pedroribeiro <pedroribeiro@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/14 16:04:18 by procha-r          #+#    #+#             */
-/*   Updated: 2024/11/17 17:00:09 by procha-r         ###   ########.fr       */
+/*   Updated: 2024/11/21 09:56:16 by pedroribeir      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,12 @@ int			print_hex(unsigned int num, int uppercase, t_format *fmt);
 int			print_percent(t_format *fmt);
 int			print_pointer(void *ptr, t_format *fmt);
 int			print_unsigned(unsigned int n, t_format *fmt);
+
+char		*get_prefix(int n);
+char		*create_zeros(int prec_zeros);
+char		*apply_precision(int n, char *num_str, int precision);
+int			count_long_digits(long n);
+char		*ft_ltoa(long n);
 
 t_format	init_format(void);
 void		apply_flags(char **str, t_format *fmt);

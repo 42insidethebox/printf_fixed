@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: procha-r <procha-r@student.42.fr>          +#+  +:+       +#+         #
+#    By: pedroribeiro <pedroribeiro@student.42.f    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/14 16:03:19 by procha-r          #+#    #+#              #
-#    Updated: 2024/11/17 17:00:39 by procha-r         ###   ########.fr        #
+#    Updated: 2024/11/21 09:56:43 by pedroribeir      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -40,6 +40,7 @@ SRC         = $(SRCDIR)/ft_printf.c \
               $(SRCDIR)/printing/print_unsigned.c \
               $(SRCDIR)/utils/flags.c \
               $(SRCDIR)/utils/format_helpers.c \
+			  $(SRCDIR)/utils/print_int_utils.c \
               $(LIBFTDIR)/src/ft_bzero.c \
               $(LIBFTDIR)/src/ft_itoa.c \
               $(LIBFTDIR)/src/ft_memcpy.c \
